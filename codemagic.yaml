@@ -1,0 +1,73 @@
+workflows:
+  flutter-build:
+    name: Flutter Build
+    instance_type: mac_mini_m1
+    environment:
+      flutter: 3.24.0 
+    scripts:
+      - name: Get dependencies
+        script: cd app && flutter pub get
+      - name: Build Android
+        script: |
+          cd app
+          flutter clean
+          flutter pub get
+          flutter build apk --debug
+      - name: Config Entitlements
+        script: |
+          cd app/ios
+          cat <<EOF > Runner/Runner.entitlements
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>com.apple.developer.bluetooth</key>
+              <true/>
+          </dict>
+          </plist>
+          EOF
+
+          sed -i '' 's/CODE_SIGN_STYLE = Automatic;/CODE_SIGN_STYLE = Manual;/g' Runner.xcodeproj/project.pbxproj
+          sed -i '' '/buildSettings = {/a \
+          CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements; \
+          CODE_SIGNING_REQUIRED = NO; \
+          AD_HOC_CODE_SIGNING_ALLOWED = YES;' Runner.xcodeproj/project.pbxproj
+      - name: Build iOS and Force Entitlements
+        script: |
+          cd app
+          flutter clean
+          flutter pub get
+          cd ios && pod install && cd ..
+          
+          # 1. Criar o ficheiro de entitlements COMPLETO (BT + Localização)
+          cat <<EOF > entitlements.plist
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>com.apple.developer.bluetooth</key>
+              <true/>
+              <key>com.apple.developer.location.when-in-use</key>
+              <true/>
+          </dict>
+          </plist>
+          EOF
+
+          # 2. Build normal sem assinatura
+          flutter build ios --release --no-codesign
+
+          # 3. INJEÇÃO MANUAL: Carimbar o binário com as permissões
+          BINARY_PATH="build/ios/iphoneos/Runner.app/Runner"
+          ldid -Sentitlements.plist "$BINARY_PATH"
+
+          # 4. Empacotar o IPA (O resto do seu script mantém-se)
+          APP_DIR="build/ios/iphoneos/Runner.app"
+          PAYLOAD="/tmp/Payload"
+          IPA_OUT="$CM_BUILD_DIR/app/anxolotl.ipa"
+          rm -rf "$PAYLOAD"
+          mkdir -p "$PAYLOAD"
+          cp -r "$APP_DIR" "$PAYLOAD/"
+          cd /tmp && zip -qr anxolotl.ipa Payload && mv anxolotl.ipa "$IPA_OUT"
+    artifacts:
+      - app/build/**/outputs/**/*.apk
+      - app/anxolotl.ipa

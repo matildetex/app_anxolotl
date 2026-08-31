@@ -1,0 +1,109 @@
+name: anxolotl_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  intl: ^0.20.2
+
+  # Auth
+  google_sign_in: ^6.2.1
+  sign_button: ^2.0.2
+  auth0_flutter: ^1.0.0
+
+  # App packaging resources
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.2.8
+
+  # Theming and customization
+  theme_provider: ^0.6.0
+  custom_navigation_bar: ^0.8.2
+  auto_size_text: ^3.0.0
+  flutter_material_pickers: ^3.1.4+1
+  animations: ^2.0.4
+  fl_chart: ^0.66.2
+
+  # Connectivity
+  flutter_blue_plus: 1.14.0
+  flutter_bluetooth_serial: ^0.4.0
+  flutter_watch_os_connectivity: ^1.0.0
+  
+  health: ^9.0.0            # iOS healthkit
+  permission_handler: ^11.3.1
+  notification_permissions: ^0.6.1
+  dart_amqp: ^0.3.1
+  audioplayers: ^4.1.0
+
+  # Background tasks
+  flutter_background_service: ^5.0.5
+  workmanager: 0.5.2
+  flutter_local_notifications: ^17.2.4
+
+  # Storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.0.15
+  objectbox: ^4.0.1
+  objectbox_flutter_libs: any
+  objectbox_generator: any
+  # ViewModels
+  provider: ^6.0.3
+
+  # Misc
+  path_provider: ^2.0.11
+  wakelock_plus: ^1.2.8
+  bit_array: ^2.2.0
+  package_info_plus: ^8.0.0
+  flutter_dotenv: ^6.0.0
+  json_annotation: ^4.4.0
+  cupertino_icons: ^1.0.5
+  share_plus: ^7.2.1
+
+
+  http: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: any
+  json_serializable: ^6.3.2
+  flutter_lints: ^3.0.0
+
+dependency_overrides:
+  intl: 0.20.2
+
+flutter_intl:
+  enabled: true
+  class_name: AnxolotlLocalizations
+  main_locale: en
+  output_dir: lib/l10n/generated
+
+objectbox:
+  output_dir: src/data/data_acces/database/generated
+
+flutter:
+  generate: false 
+  uses-material-design: true
+
+  assets:
+    - .env
+    - lib/assets/
+    - lib/assets/branding/
+    - lib/assets/exercises/
+    - lib/assets/certificates/ca_certificate.pem
+    - lib/assets/certificates/app_certificate.pem
+    - lib/assets/certificates/app_key.pem
+
+  # fonts:
+  #   - family: Ubuntu
+  #     fonts:
+  #       - asset: lib/assets/fonts/Ubuntu-Regular.ttf
+  #   - family: Ubuntu Mono
+  #     fonts:
+  #       - asset: lib/assets/fonts/UbuntuMono-Regular.ttf

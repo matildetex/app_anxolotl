@@ -1,0 +1,1 @@
+enum MeasurementState { CREATED, MEASURING, PAUSED, FINISHED }

@@ -1,0 +1,139 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5915632046932765488",
+      "lastPropertyId": "4:2465338634006595291",
+      "name": "MeasurementDbDto",
+      "properties": [
+        {
+          "id": "1:5143290564688431992",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7218056264712149266",
+          "name": "measurementId",
+          "type": 9
+        },
+        {
+          "id": "3:7118512638627041831",
+          "name": "measurementType",
+          "type": 6
+        },
+        {
+          "id": "4:2465338634006595291",
+          "name": "userId",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:8128207191273513229",
+      "lastPropertyId": "5:4776919747270722802",
+      "name": "MeasurementRowEntryDbDto",
+      "properties": [
+        {
+          "id": "1:4832253433798210866",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4505343065475429140",
+          "name": "measurementId",
+          "type": 9
+        },
+        {
+          "id": "3:1743782441996100638",
+          "name": "timestamp",
+          "type": 10
+        },
+        {
+          "id": "4:2364137277508763730",
+          "name": "key",
+          "type": 9
+        },
+        {
+          "id": "5:4776919747270722802",
+          "name": "value",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6499442847754542145",
+      "lastPropertyId": "4:1764038729618050348",
+      "name": "HealthResultLabelDbDto",
+      "properties": [
+        {
+          "id": "1:3477845900472755396",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4963837565890467466",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "3:5619988823638696575",
+          "name": "labelValue",
+          "type": 8
+        },
+        {
+          "id": "4:1764038729618050348",
+          "name": "timestamp",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1786262747780728646",
+      "lastPropertyId": "4:3702057484505720993",
+      "name": "HealthEventDbDto",
+      "properties": [
+        {
+          "id": "1:7163860662378805744",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5294265747079504490",
+          "name": "userId",
+          "type": 9
+        },
+        {
+          "id": "3:6302142651094743068",
+          "name": "healthEventsIndex",
+          "type": 6
+        },
+        {
+          "id": "4:3702057484505720993",
+          "name": "timestamp",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:1786262747780728646",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

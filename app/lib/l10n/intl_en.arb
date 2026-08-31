@@ -1,0 +1,532 @@
+{
+  "@@locale": "en",
+  "@@last_modified": "2022-08-29T00:14:38.707430",
+  "homeTitle": "Home",
+  "@homeTitle": {
+    "description": "Home page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "wellBeingTitle": "Well-being",
+  "@wellBeingTitle": {
+    "description": "Well-being page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "eventsTitle": "Events",
+  "@eventsTitle": {
+    "description": "Events page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "profileTitle": "Profile",
+  "@profileTitle": {
+    "description": "Profile page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exercises": "Exercises",
+  "@exercises": {
+    "description": "Exercises subtitle",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "stressBreathingGuidance": "Stress Breathing Guidance",
+  "@stressBreathingGuidance": {
+    "description": "Stress Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "anxietyBreathingGuidance": "Anxiety Breathing Guidance",
+  "@anxietyBreathingGuidance": {
+    "description": "Anxiety Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicBreathingGuidance": "Panic Breathing Guidance",
+  "@panicBreathingGuidance": {
+    "description": "Panic Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "minutes": "{howMany,plural, =0{Instant}=1{{minutes} Minute}other{{minutes} Minutes}}",
+  "@minutes": {
+    "description": "Minute counter",
+    "type": "text",
+    "placeholders_order": [
+      "howMany",
+      "minutes"
+    ],
+    "placeholders": {
+      "howMany": {},
+      "minutes": {}
+    }
+  },
+  "mindfulness": "Mindfulness",
+  "@mindfulness": {
+    "description": "Mindfulness title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mindfulnessExercise": "Mindfulness Exercise",
+  "@mindfulnessExercise": {
+    "description": "Mindfulness Exercise",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deepBreaths": "Take deep breaths",
+  "@deepBreaths": {
+    "description": "Describing the user to breath deep",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "inhale": "Inhale",
+  "@inhale": {
+    "description": "Describing the user to inhale",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "holdBreath": "Hold the breath",
+  "@holdBreath": {
+    "description": "Describing the user to hold the breath",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exhale": "Exhale",
+  "@exhale": {
+    "description": "Describing the user to exhale",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "start": "Start",
+  "@start": {
+    "description": "Starting anything",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "congratulations": "Congratulations",
+  "@congratulations": {
+    "description": "Congratulations expression",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "continueExp": "Continue",
+  "@continueExp": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "breathingExerciseComplete": "You have completed {breathCount} breath cycles",
+  "@breathingExerciseComplete": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [
+      "breathCount"
+    ],
+    "placeholders": {
+      "breathCount": {}
+    }
+  },
+  "mindfulnessExerciseComplete": "You took {minutesDuration} minutes to take care of your mental wellbeing",
+  "@mindfulnessExerciseComplete": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [
+      "minutesDuration"
+    ],
+    "placeholders": {
+      "minutesDuration": {}
+    }
+  },
+  "briefMindfulnessExerciseName": "Brief mindfulness practice",
+  "@briefMindfulnessExerciseName": {
+    "description": "The name of the brief mindfullness exercise (Audio in English)",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mountainMeditationExerciseName": "Mountain Meditation",
+  "@mountainMeditationExerciseName": {
+    "description": "The name of the Mountain Meditation exercise (Audio in English)",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "openingGreeting": "Hey there,\nwelcome back",
+  "@openingGreeting": {
+    "description": "The greeting when a user enters the app",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "loginWarning": "Login to your account to continue",
+  "@loginWarning": {
+    "description": "Warning the user a login is needed to proceed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "logInMessage": "Log in with {authProvider}",
+  "@logInMessage": {
+    "description": "Message for log in button in a way",
+    "type": "text",
+    "placeholders_order": [
+      "authProvider"
+    ],
+    "placeholders": {
+      "authProvider": {}
+    }
+  },
+  "logOutMessage": "Log out",
+  "@logOutMessage": {
+    "description": "Log out expression",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "termsOfServiceMessage": "By continuing, you agree to the Terms of Service",
+  "@termsOfServiceMessage": {
+    "description": "Message saying the user agrees to the terms of service",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "failedLogIn": "Log In Failed",
+  "@failedLogIn": {
+    "description": "Message warning that the log in process failed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "failedLogOut": "Sign Out Failed",
+  "@failedLogOut": {
+    "description": "Message warning that the log out process failed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "warningExp": "Warning",
+  "@warningExp": {
+    "description": "Expression to warn",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "logOutWarning": "A new browser window might appear, in that case, wait for it to load and then close it to proceed. The log out will be fulfilled by then",
+  "@logOutWarning": {
+    "description": "Disclosing the log out process",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "pleaseInsertValue": "Please insert a value",
+  "@pleaseInsertValue": {
+    "description": "Asking user to add a value into a textField",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "aboutYou": "About you",
+  "@aboutYou": {
+    "description": "The section about a user data",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "birthdayWord": "Birthday",
+  "@birthdayWord": {
+    "description": "Birthday word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "genderWord": "Gender",
+  "@genderWord": {
+    "description": "Gender word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "weightWord": "Weight",
+  "@weightWord": {
+    "description": "Weight word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "heightWord": "Height",
+  "@heightWord": {
+    "description": "Height Word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deviceWord": "Device",
+  "@deviceWord": {
+    "description": "Device word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "selectYourExp": "Select your {fillerWord}",
+  "@selectYourExp": {
+    "description": "The expression to select something",
+    "type": "text",
+    "placeholders_order": [
+      "fillerWord"
+    ],
+    "placeholders": {
+      "fillerWord": {}
+    }
+  },
+  "connectNewDevice": "Connect to a new device",
+  "@connectNewDevice": {
+    "description": "Expression to connect to a new device",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "disconnectBluetoothDevice": "Are you sure you want to disconnect the current device",
+  "@disconnectBluetoothDevice": {
+    "description": "Explaining the user is about to disconnect the current connected bluetooth device",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "bluetoothOffMessage": "Bluetooth connectivity is off. To be able scan devices, you need to turn Bluetooth on",
+  "@bluetoothOffMessage": {
+    "description": "Explaining the user that without turning on bluetooth, it is impossible to scan devices",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cancelExp": "Cancel",
+  "@cancelExp": {
+    "description": "Expression to cancel an action",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "connectDeviceTitle": "Device Connection",
+  "@connectDeviceTitle": {
+    "description": "Device Connection page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "availableDevices": "Available Devices",
+  "@availableDevices": {
+    "description": "Devices available for an operation",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "tryingConnection": "Trying to connect",
+  "@tryingConnection": {
+    "description": "Expression of connection try",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "connectionError": "Error connecting",
+  "@connectionError": {
+    "description": "An error happened while connecting",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "todayWord": "Today",
+  "@todayWord": {
+    "description": "Word for today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "yesterdayWord": "Yesterday",
+  "@yesterdayWord": {
+    "description": "Word for yesterday",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "anxietyWord": "Anxiety",
+  "@anxietyWord": {
+    "description": "Word for anxiety",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "stressWord": "Stress",
+  "@stressWord": {
+    "description": "Word for stress",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mentalLevelTitle": "{levelNumber,plural, =0{☀️ Level {levelNumber}}=1{🌤️ Level {levelNumber}}=2{🌧️ Level {levelNumber}}other{Calculating level}}",
+  "@mentalLevelTitle": {
+    "description": "Only thing that changes are the emojis",
+    "type": "text",
+    "placeholders_order": [
+      "levelNumber"
+    ],
+    "placeholders": {
+      "levelNumber": {}
+    }
+  },
+  "mentalLevelAdvice": "{levelNumber,plural, =0{Enjoy your day}=1{Keep an eye on it}=2{Take some time for yourself}other{Wait some time}}",
+  "@mentalLevelAdvice": {
+    "description": "Advice for high levels of mental monitoring",
+    "type": "text",
+    "placeholders_order": [
+      "levelNumber"
+    ],
+    "placeholders": {
+      "levelNumber": {}
+    }
+  },
+  "lastDaysExp": "Last {length} days",
+  "@lastDaysExp": {
+    "description": "Expression for last few days",
+    "type": "text",
+    "placeholders_order": [
+      "length"
+    ],
+    "placeholders": {
+      "length": {}
+    }
+  },
+  "duringHoursExp": "{hours,plural, =0{During {hours} hours}=1{During {hours} hour}other{During {hours} hours}}",
+  "@duringHoursExp": {
+    "description": "Expression for lasting some hours",
+    "type": "text",
+    "placeholders_order": [
+      "hours"
+    ],
+    "placeholders": {
+      "hours": {}
+    }
+  },
+  "highestLevelTodayExp": "Highest level today",
+  "@highestLevelTodayExp": {
+    "description": "Expression for highest level today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "maleWord": "Male",
+  "@maleWord": {
+    "description": "Expression for male",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "femaleWord": "Female",
+  "@femaleWord": {
+    "description": "Expression for female",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "otherWord": "Other",
+  "@otherWord": {
+    "description": "Word for other",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "measuringExp": "Taking measurements",
+  "@measuringExp": {
+    "description": "Expression for performing measurements",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "noHealthNotifications": "Nothing to worry about, enjoy your day.",
+  "@noHealthNotifications": {
+    "description": "Expressions stating that the user should not worry, and should have a nice day",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "lowAnxietyLevel": "Your anxiety level is quite good today.",
+  "@lowAnxietyLevel": {
+    "description": "Expressions stating that the user should not worry, and should have a nice day",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "dailyAverageExp": "Daily average",
+  "@dailyAverageExp": {
+    "description": "Expression stating the daily average",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "currentLevelExp": "Current level",
+  "@currentLevelExp": {
+    "description": "Expression stating current level",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicDetectedExp": "Panic attack detected",
+  "@panicDetectedExp": {
+    "description": "Expression stating a panic attack was detected",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicDetectedExplanation": "Our algorithms detected a panic attack happening. You can use our breathing exercises to try and get better.",
+  "@panicDetectedExplanation": {
+    "description": "Explanation for detecting panic attack",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyTodayExp": "High anxiety today",
+  "@highAnxietyTodayExp": {
+    "description": "Expression stating a high anxiety was detected today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyTodayExplanation": "After performing some very hard calculations, our algorithms detected that today your anxiety level had an average superior to level 1. Would you like to do some exercises?",
+  "@highAnxietyTodayExplanation": {
+    "description": "Explanation for detecting high anxiety today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyLastDaysExp": "High anxiety in the last few days",
+  "@highAnxietyLastDaysExp": {
+    "description": "Expression stating a high anxiety was detected in the last few days",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyLastDaysExplanation": "How where the last few days ? Our algorithms detected a continuous high average anxiety level. Take this chance to take care of yourself.",
+  "@highAnxietyLastDaysExplanation": {
+    "description": "Explanation for detecting high anxiety the last few days",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  }
+}

@@ -1,0 +1,136 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'dev.flutter.flutter-gradle-plugin'
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace "ipl.isel.meic.anxolotl_app"
+        ndkVersion "27.0.12077973"
+    compileSdkVersion 36
+    ndkVersion "27.0.12077973"
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "ipl.isel.meic.anxolotl_app"
+        minSdkVersion 21
+        
+        // ALTERAÇÃO AQUI: Substitua 'flutter.targetSdkVersion' pelo valor direto
+        targetSdkVersion 36
+        
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        resConfigs("en", "pt")
+
+        manifestPlaceholders['auth0Domain'] = "dev-gbsl0yt5k5hdoddv.us.auth0.com"
+        manifestPlaceholders['auth0Scheme'] = "com.auth0"
+        multiDexEnabled true
+    }
+
+    // signingConfigs { miau
+    //     debug {
+    //         keyAlias keystoreProperties['keyAlias']
+    //         keyPassword keystoreProperties['keyPassword']
+    //         storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+    //         storePassword keystoreProperties['storePassword']
+    //     }
+    //     release {
+    //         keyAlias keystoreProperties['keyAlias']
+    //         keyPassword keystoreProperties['keyPassword']
+    //         storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+    //         storePassword keystoreProperties['storePassword']
+    //     }
+    // }
+
+    // signingConfigs { MIAU
+    //     debug {
+    //         storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
+    //         storePassword "android"
+    //         keyAlias "androiddebugkey"
+    //         keyPassword "android"
+    //     }
+    //     release {
+    //         keyAlias keystoreProperties['keyAlias']
+    //         keyPassword keystoreProperties['keyPassword']
+    //         storeFile file(keystoreProperties['storeFile'])
+    //         storePassword keystoreProperties['storePassword']
+    //     }
+    // }
+
+    signingConfigs {
+        debug {
+            storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+        release {
+            // TEMP: assinar com debug para conseguir compilar sem key.properties
+            storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+
+    buildTypes {
+        debug {
+            // signingConfig signingConfigs.debug miau
+            // shrinkResources false miau
+            // minifyEnabled false miau
+        }
+        release {
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.release
+            shrinkResources false
+            minifyEnabled false
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.22"
+}

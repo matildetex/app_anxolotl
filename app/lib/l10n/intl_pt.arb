@@ -1,0 +1,534 @@
+{
+  "@@locale": "pt",
+  "@@last_modified": "2022-08-29T00:14:38.707430",
+  "homeTitle": "Página Inicial",
+  "@homeTitle": {
+    "description": "Home page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "wellBeingTitle": "Bem-Estar",
+  "@wellBeingTitle": {
+    "description": "Well-being page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "eventsTitle": "Eventos",
+  "@eventsTitle": {
+    "description": "Events page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "profileTitle": "Perfil",
+  "@profileTitle": {
+    "description": "Profile page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exercises": "Exercícios",
+  "@exercises": {
+    "description": "Exercises subtitle",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "stressBreathingGuidance": "Orientação de Respiração para Stress",
+  "@stressBreathingGuidance": {
+    "description": "Stress Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "anxietyBreathingGuidance": "Orientação de Respiração para Ansiedade",
+  "@anxietyBreathingGuidance": {
+    "description": "Anxiety Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicBreathingGuidance": "Orientação de Respiração para Pânico",
+  "@panicBreathingGuidance": {
+    "description": "Panic Breathing Guidance",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "minutes": "{howMany,plural, =0{Instantâneo}=1{{minutes} Minuto}other{{minutes} Minutos}}",
+  "@minutes": {
+    "description": "Minute counter",
+    "type": "text",
+    "placeholders_order": [
+      "howMany",
+      "minutes"
+    ],
+    "placeholders": {
+      "howMany": {},
+      "minutes": {}
+    }
+  },
+  "mindfulness": "Meditação",
+  "@mindfulness": {
+    "description": "Mindfulness title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mindfulnessExercise": "Exercício de Meditação",
+  "@mindfulnessExercise": {
+    "description": "Mindfulness Exercise",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deepBreaths": "Respire profundamente",
+  "@deepBreaths": {
+    "description": "Describing the user to breath deep",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "inhale": "Inspire",
+  "@inhale": {
+    "description": "Describing the user to inhale",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "holdBreath": "Sustenha a respiração",
+  "@holdBreath": {
+    "description": "Describing the user to hold the breath",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "exhale": "Expire",
+  "@exhale": {
+    "description": "Describing the user to exhale",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "start": "Começar",
+  "@start": {
+    "description": "Starting anything",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "congratulations": "Parabéns",
+  "@congratulations": {
+    "description": "Congratulations expression",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "continueExp": "Continuar",
+  "@continueExp": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "breathingExerciseComplete": "Completou {breathCount} ciclos respiratórios",
+  "@breathingExerciseComplete": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [
+      "breathCount"
+    ],
+    "placeholders": {
+      "breathCount": {}
+    }
+  },
+  "mindfulnessExerciseComplete": "Tirou {minutesDuration} minutos para cuidar da saúde mental",
+  "@mindfulnessExerciseComplete": {
+    "description": "Continue expression for buttons",
+    "type": "text",
+    "placeholders_order": [
+      "minutesDuration"
+    ],
+    "placeholders": {
+      "minutesDuration": {}
+    }
+  },
+  "briefMindfulnessExerciseName": "Meditação Breve (Áudio em Inglês)",
+  "@briefMindfulnessExerciseName": {
+    "description": "The name of the brief mindfullness exercise (Audio in English)",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mountainMeditationExerciseName": "Meditação da Montanha (Áudio em Inglês)",
+  "@mountainMeditationExerciseName": {
+    "description": "The name of the Mountain Meditation exercise (Audio in English)",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "openingGreeting": "Olá,\nBem-vindo de volta",
+  "@openingGreeting": {
+    "description": "The greeting when a user enters the app",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "loginWarning": "Entre na sua conta para continuar",
+  "@loginWarning": {
+    "description": "Warning the user a login is needed to proceed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "logInMessage": "Entrar com {authProvider}",
+  "@logInMessage": {
+    "description": "Message for log in button in a way",
+    "type": "text",
+    "placeholders_order": [
+      "authProvider"
+    ],
+    "placeholders": {
+      "authProvider": {}
+    }
+  },
+  "logOutMessage": "Sair da conta",
+  "@logOutMessage": {
+    "description": "Log out expression",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "termsOfServiceMessage": "Ao continuar, está a aceitar os Termos de Serviço",
+  "@termsOfServiceMessage": {
+    "description": "Message saying the user agrees to the terms of service",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "failedLogIn": "A entrada na conta falhou",
+  "@failedLogIn": {
+    "description": "Message warning that the log in process failed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "failedLogOut": "A saída da conta falhou",
+  "@failedLogOut": {
+    "description": "Message warning that the log out process failed",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "warningExp": "Aviso",
+  "@warningExp": {
+    "description": "Expression to warn",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "logOutWarning": "Uma nova janela do navegador da Internet poderá aparecer. Nesse caso, espere que carregue e feche para proceder. A saída de conta terá sido concluída.",
+  "@logOutWarning": {
+    "description": "Disclosing the log out process",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "pleaseInsertValue": "Por favor insira um valor",
+  "@pleaseInsertValue": {
+    "description": "Asking user to add a value into a textField",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "aboutYou": "Dados Pessoais",
+  "@aboutYou": {
+    "description": "The section about a user data",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "birthdayWord": "Aniversário",
+  "@birthdayWord": {
+    "description": "Birthday word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "genderWord": "Género",
+  "@genderWord": {
+    "description": "Gender word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "weightWord": "Peso",
+  "@weightWord": {
+    "description": "Weight word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "heightWord": "Altura",
+  "@heightWord": {
+    "description": "Height Word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "deviceWord": "Dispositivo",
+  "@deviceWord": {
+    "description": "Device word",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "selectYourExp": "Selecione o seu {fillerWord}",
+  "@selectYourExp": {
+    "description": "The expression to select something",
+    "type": "text",
+    "placeholders_order": [
+      "fillerWord"
+    ],
+    "placeholders": {
+      "fillerWord": {}
+    }
+  },
+  "connectNewDevice": "Conectar-se a um novo dispositivo",
+  "@connectNewDevice": {
+    "description": "Expression to connect to a new device",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "disconnectBluetoothDevice": "Pretende disconectar o dispositivo Bluetooth atualmente ligado?",
+  "@disconnectBluetoothDevice": {
+    "description": "Explaining the user is about to disconnect the current connected bluetooth device",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "bluetoothOffMessage": "A conectividade por Bluetooth está desligada. Para poder procurar dispositivos, por falor ligue o Bluetooth",
+  "@bluetoothOffMessage": {
+    "description": "Explaining the user that without turning on bluetooth, it is impossible to scan devices",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "cancelExp": "Cancelar",
+  "@cancelExp": {
+    "description": "Expression to cancel an action",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "connectDeviceTitle": "Conexão de dispositivos",
+  "@connectDeviceTitle": {
+    "description": "Device Connection page title",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "availableDevices": "Dispositivos disponíveis",
+  "@availableDevices": {
+    "description": "Devices available for an operation",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "tryingConnection": "A tentar conectar",
+  "@tryingConnection": {
+    "description": "Expression of connection try",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "connectionError": "Erro durante a conexão",
+  "@connectionError": {
+    "description": "An error happened while connecting",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "todayWord": "Hoje",
+  "@todayWord": {
+    "description": "Word for today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "yesterdayWord": "Ontem",
+  "@yesterdayWord": {
+    "description": "Word for yesterday",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "anxietyWord": "Ansiedade",
+  "@anxietyWord": {
+    "description": "Word for anxiety",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "stressWord": "Stress",
+  "@stressWord": {
+    "description": "Word for stress",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "mentalLevelTitle": "{levelNumber,plural, =0{☀️ Nível {levelNumber}}=1{🌤️ Nível {levelNumber}}=2{🌧️ Nível {levelNumber}}other{A calcular o nível}}",
+  "@mentalLevelTitle": {
+    "description": "Only thing that changes are the emojis",
+    "type": "text",
+    "placeholders_order": [
+      "levelNumber"
+    ],
+    "placeholders": {
+      "levelNumber": {}
+    }
+  },
+  "mentalLevelAdvice": "{levelNumber,plural, =0{Aproveita o dia}=1{Tem atenção ao teu estado}=2{Tira um tempo para ti}other{Espere um pouco}}",
+  "@mentalLevelAdvice": {
+    "description": "Advice for high levels of mental monitoring",
+    "type": "text",
+    "placeholders_order": [
+      "levelNumber"
+    ],
+    "placeholders": {
+      "levelNumber": {}
+    }
+  },
+  "lastDaysExp": "Últimos {length} dias",
+  "@lastDaysExp": {
+    "description": "Expression for last few days",
+    "type": "text",
+    "placeholders_order": [
+      "length"
+    ],
+    "placeholders": {
+      "length": {}
+    }
+  },
+  "duringHoursExp": "{hours,plural, =0{Durante {hours} horas}=1{Durante {hours} hora}other{Durante {hours} horas}}",
+  "@duringHoursExp": {
+    "description": "Expression for lasting some hours",
+    "type": "text",
+    "placeholders_order": [
+      "hours"
+    ],
+    "placeholders": {
+      "hours": {}
+    }
+  },
+  "highestLevelTodayExp": "Nível mais elevado hoje",
+  "@highestLevelTodayExp": {
+    "description": "Expression for highest level today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "maleWord": "Masculino",
+  "@maleWord": {
+    "description": "Expression for male",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "femaleWord": "Feminino",
+  "@femaleWord": {
+    "description": "Expression for female",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "otherWord": "Outro",
+  "@otherWord": {
+    "description": "Word for other",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "measuringExp": "A tirar medidas",
+  "@measuringExp": {
+    "description": "Expression for performing measurements",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "noHealthNotifications": "Nada para te preocurares, aproveita o dia.",
+  "@noHealthNotifications": {
+    "description": "Expressions stating that the user should not worry, and should have a nice day",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "lowAnxietyLevel": "Os níveis de ansiedade estão bons hoje.",
+  "@lowAnxietyLevel": {
+    "description": "Expressions stating that the user should not worry, and should have a nice day",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "dailyAverageExp": "Média diária",
+  "@dailyAverageExp": {
+    "description": "Expression stating the daily average",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "currentLevelExp": "Nível atual",
+  "@currentLevelExp": {
+    "description": "Expression stating current level",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicDetectedExp": "Ataque de pânico detectado",
+  "@panicDetectedExp": {
+    "description": "Expression stating a panic attack was detected",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "panicDetectedExplanation": "Os nossos algoritmos detectaram um ataque de pânico. Podes usar os nossos exercícios para estabilizar.",
+  "@panicDetectedExplanation": {
+    "description": "Explanation for detecting panic attack",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyTodayExp": "Ansiedade alta hoje",
+  "@highAnxietyTodayExp": {
+    "description": "Expression stating a high anxiety was detected today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+
+  "highAnxietyTodayExplanation": "Após efectuar cálculos complicados, os nossos algoritmos detectaram que o nível médio de ansiedade hoje foi superior a nível 1. Queres fazer algum exercício ?",
+  "@highAnxietyTodayExplanation": {
+    "description": "Explanation for detecting high anxiety today",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+  "highAnxietyLastDaysExp": "Ansiedade alta nos últimos dias",
+  "@highAnxietyLastDaysExp": {
+    "description": "Expression stating a high anxiety was detected in the last few days",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  },
+
+  "highAnxietyLastDaysExplanation": "Como correram os últimos dias ? Os nossos algoritmos detectaram um nível alto de ansiedade nos últimos dias. Usa esta oportunidade para cuidar de ti.",
+  "@highAnxietyLastDaysExplanation": {
+    "description": "Explanation for detecting high anxiety the last few days",
+    "type": "text",
+    "placeholders_order": [],
+    "placeholders": {}
+  }
+}

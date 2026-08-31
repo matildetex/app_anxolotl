@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "Anxolotl App — recolha de sinais fisiológicos via Apple Watch para deteção de stress"
+message: "Se usar este software ou os dados por ele recolhidos, por favor cite-o como abaixo."
+type: software
+authors:
+  - given-names: Nuno
+    family-names: Gomes
+    affiliation: "Instituto Superior de Engenharia de Lisboa (ISEL)"
+  - given-names: Matilde
+    family-names: Teixeira
+    affiliation: "Universidade de Aveiro (UA)"
+abstract: >-
+  Aplicação móvel Flutter, com componente watchOS nativa, para recolha contínua
+  de sinais fisiológicos e de movimento a partir de um Apple Watch — frequência
+  cardíaca (HealthKit), acelerometria tri-axial (Core Motion), passos, energia
+  ativa e distância — com o objetivo de detetar episódios de stress como proxy
+  de ansiedade. Os sinais são transmitidos para o iPhone via WatchConnectivity,
+  agregados em sessões e exportados em ficheiros CSV. Continuação do projeto
+  Anxolotl, focada na aplicação móvel.
+keywords:
+  - anxiety
+  - stress detection
+  - Apple Watch
+  - watchOS
+  - HealthKit
+  - Core Motion
+  - heart rate
+  - accelerometry
+  - physiological signals
+  - wearable sensing
+  - mHealth
+  - Flutter
+license: MIT
+version: 1.0.0
+date-released: "2026-08-31"
